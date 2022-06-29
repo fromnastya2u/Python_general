@@ -31,7 +31,6 @@ for item in range(0, len(my_list)-1, 2):                  # где for  in - ц�
                                                           # 0: начало последовательности, len(my_list)-1: окончание последовательности, но не включая его, 2: step
                                                           # len(my_list) - 1, len - начнает с 1, а  range - начинает с 0, при нечетном количестве у последнего индекса не будет пары на замену - выдает ошибку
     my_list[item], my_list[item + 1] = my_list[item + 1], my_list[item]
-
 print(my_list)
 
 # 3. Пользователь вводит месяц в виде целого числа от 1 до 12.
@@ -43,19 +42,19 @@ season_list = ['зима', 'весна','лето','осень']
 season_dict = {1 : 'зима', 2 : 'весна', 3 : 'лето', 4 : 'осень'}
 
 if month_number == 1 or month_number == 2 or month_number == 12:
-  print(season_list[0])
-  print(season_dict.get(1))
+    print(season_list[0])
+    print(season_dict.get(1))
 elif month_number == 3 or month_number == 4 or month_number ==5:
-  print(season_list[1])
-  print(season_dict.get(2))
+    print(season_list[1])
+    print(season_dict.get(2))
 elif month_number == 6 or month_number == 7 or month_number == 8:
-  print(season_list[2])
-  print(season_dict.get(3))
+    print(season_list[2])
+    print(season_dict.get(3))
 elif month_number == 9 or month_number == 10 or month_number == 11:
-  print(season_list[3])
-  print(season_dict.get(4))
+    print(season_list[3])
+    print(season_dict.get(4))
 else:
-        print("Ошибка ввода данных")
+    print("Ошибка ввода данных")
 
 
 # 4. Пользователь вводит строку из нескольких слов, разделённых пробелами. Вывести каждое слово с новой строки.
@@ -64,7 +63,7 @@ else:
 string = input("Введите строку из нескольких слов, разделённых пробелами: ").split()
 ind = 1
 for el in string:
-    print (str(ind) + ': ' + el[0:10])
+    print(str(ind) + ': ' + el[0:10])
     ind += 1
 
 # 5. Реализовать структуру «Рейтинг», представляющую собой набор натуральных чисел, который не возрастает.
